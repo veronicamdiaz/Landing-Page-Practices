@@ -108,17 +108,3 @@ nav a {
     width: 100%;
     height: auto;
 }
-
-/* Configuração para telas menores que 667px */
-@media (max-width: 667px) {
-    #museum-educational-section .cards-row {
-    display: flex;
-      flex-direction: column; /* Alinha os cards verticalmente */
-      align-items: center; /* Centraliza os cards */
-      margin-bottom: 20px; /* Adiciona espaço entre os cards */
-    }
-
-    #museum-educational-section .col-md-4 {
-      width: 100%; /* Cards ocupam 100% da largura */
-    }
-}
