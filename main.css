@@ -1,9 +1,14 @@
 body {
+<<<<<<< HEAD
     background-color: #EDEADD;
+=======
+    background-color: #f5f5f5;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
     font-family: sans-serif;
     margin: 0;
 }
 
+<<<<<<< HEAD
 h2 {
     font-size: 14px;
 }
@@ -13,10 +18,14 @@ h2 {
 }
 
  /* #webgl-container {
+=======
+.webgl-container {
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+<<<<<<< HEAD
     height: 100%;
     overflow: hidden;
     background-color: #f5f5f5;
@@ -64,6 +73,16 @@ h2 {
     transform: translateX(-50%);
     transform-origin: top;
     transform: rotate(-45deg);
+=======
+    height: auto;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
 }
 
 nav {
@@ -75,7 +94,11 @@ nav {
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
+<<<<<<< HEAD
     font-size: 12;
+=======
+    font-size: 40%;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
     text-align: center;
     white-space: nowrap;
     z-index: 1;
@@ -96,16 +119,25 @@ nav a {
     border: none;
 }
 
+<<<<<<< HEAD
 #cabecalho {
+=======
+.cabecalho {
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     z-index: 10;
+=======
+    display: flex;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
 }
 
 
 .card {
+<<<<<<< HEAD
     border: none;
     box-shadow: none;
     padding: 4px;
@@ -114,6 +146,13 @@ nav a {
 .row {
     flex-wrap: wrap; /* Para quebrar corretamente em telas pequenas */
     justify-content: space-between; /* Garante espaçamento uniforme */
+=======
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: none;
+    height: auto;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
 }
 
 .card img {
@@ -124,14 +163,22 @@ nav a {
 }
 
 .card h3 {
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 60%;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
     font-family: 'Albert Sans';
     color: #666;
     font-weight: bold;
 }
 .card p {
     margin-top: 10px;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 10px;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
     color: #666;
     font-family: 'Albert Sans';
 }
@@ -143,7 +190,11 @@ nav a {
 .section-title {
     font-family: 'Albert Sans';
     font-weight: bold;
+<<<<<<< HEAD
     font-size: 1em;
+=======
+    font-size: 16px;
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
 }
 
 #nova-secao {
@@ -155,4 +206,8 @@ nav a {
     max-height: 100px;
     width: 100%;
     height: auto;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7

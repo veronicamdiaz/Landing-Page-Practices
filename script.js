@@ -62,6 +62,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   animate();
 
+<<<<<<< HEAD
+=======
+  // Função para ajustar o tamanho do renderizador e atualizar a câmera
+function onWindowResize() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  // Atualiza as proporções da câmera
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+
+  // Ajusta o tamanho do renderizador
+  renderer.setSize(width, height);
+}
+
+// Adiciona um event listener para chamar a função sempre que a janela for redimensionada
+window.addEventListener('resize', onWindowResize, false);
+
+// Chama a função uma vez para configurar inicialmente
+onWindowResize();
+
+>>>>>>> f6ba129280c60b0c6296651ffa9bb8a7383d8ce7
   // Redimensionar o renderizador quando a janela for redimensionada
   window.addEventListener('resize', () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
