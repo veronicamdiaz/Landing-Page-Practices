@@ -1,0 +1,159 @@
+.modal {
+    margin: auto;
+    position: fixed;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    background: #DAB400;
+    z-index: 1000;
+    top: 50%; /* Alinha o modal ao centro verticalmente */
+    left: 50%; /* Alinha o modal ao centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para realmente centralizar */
+
+}
+
+.input-container {
+    border: none;
+    margin-bottom: 10px; /* Espaçamento entre os inputs */
+    width: 100%; /* Faz com que o input ocupe toda a largura disponível */
+        justify-content: flex-end; /* Alinha o botão à direita */
+}
+.button-container {
+    outline: none;
+    justify-self: right;
+}
+
+.submit-button {
+margin-bottom: 20px; /* Espaçamento entre os botões e o próximo input */
+width: 280px;
+display: flex; /* Permite que o botão seja centralizado */
+outline: none;
+border: none;
+justify-content: flex-end; /* Alinha o botão à direita */
+padding: 10px 0;
+background-color: transparent;
+cursor: pointer;
+}
+
+.input-email, .input-password {
+    border: none;
+    width: 100%; /* Faz com que os inputs ocupem toda a largura disponível */
+    padding: 10px; /* Adiciona um pouco de padding para os inputs */
+}
+
+.modal-items {
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+padding: 20px;
+}
+
+.input {
+width: 300px;
+padding: 10px 15px;
+border-radius: 18px;
+
+}
+
+
+    #profileIcon {
+        cursor: pointer;
+    }
+
+h2 {
+    font-size: 24px;
+    font-weight: bold; /* Negrito */
+    margin: 0;
+    font-family: 'Albert Sans';
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0;
+    font-family: 'Albert Sans';
+    font-weight: bold;
+}
+
+.input-email,
+.input-password {
+    width: 280px; /* Largura dos campos de entrada */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 200px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #308F44;
+    background: #FFF;
+    font-family: 'Albert Sans';
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.submit-button img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+@media (max-width: 1024px) {
+    .modal {
+        width: 80%; /* Modal ocupa 80% da largura da tela */
+        height: auto; /* A altura do modal se ajusta automaticamente */
+    }
+
+    .input-email,
+    .input-password {
+        width: 240px; /* Menor largura para inputs */
+    }
+
+    h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+    }
+
+    p {
+        font-size: 12px; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+}
+
+/* Media Query para Celulares */
+@media (max-width: 768px) {
+    .modal {
+        width: 90%; /* Modal ocupa 90% da largura da tela */
+        height: auto; /* A altura do modal se ajusta automaticamente */
+    }
+
+    .input-email,
+    .input-password {
+        width: 100%; /* Inputs ocupam 100% da largura da tela */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h2 {
+        font-size: 18px; /* Tamanho da fonte do título para celular */
+    }
+
+    p {
+        font-size: 14px; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+
+    .close-button {
+        font-size: 20px; /* Ajusta o tamanho do ícone de fechar */
+    }
+}

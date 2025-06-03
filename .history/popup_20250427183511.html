@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-icon" onclick="togglePopup()">👤</div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup()">×</span>
+            <h1>Hey, nice to see you here!</h1>
+            <p>First, fill your email to create an account.</p>
+            <input type="email" placeholder="e-mail" required>
+            <p>If you already have one, please, login!</p>
+            <input type="email" placeholder="e-mail" required>
+            <input type="password" placeholder="password" required>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

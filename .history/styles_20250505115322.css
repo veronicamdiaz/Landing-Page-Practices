@@ -1,0 +1,64 @@
+.modal {
+    margin: auto;
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    background: #DAB400;
+    z-index: 1000;
+    top: 50%; /* Alinha o modal ao centro verticalmente */
+    left: 50%; /* Alinha o modal ao centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para realmente centralizar */
+
+}
+
+.modal-items {
+        padding: 10px;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold; /* Negrito */
+    margin: 0;
+    font-family: 'Albert Sans';
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0;
+    font-family: 'Albert Sans';
+    font-weight: bold;
+}
+
+.input-email,
+.input-password {
+    width: 280px; /* Largura dos campos de entrada */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 200px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #308F44;
+    background: #FFF;
+    font-family: 'Albert Sans';
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
