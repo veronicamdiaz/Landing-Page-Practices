@@ -42,6 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Verifica quando a página carrega
+window.onload = updateImage;
+
+// Verifica quando a tela redimensiona
+window.onresize = updateImage;
+
 // <-- Fechando corretamente a função de 'DOMContentLoaded'
 
 
