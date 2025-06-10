@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Imagem clicada. Estado atual:', estado);
 
     if (estado === 'inicial') {
-      imagem.src = './images/lights drawings2-05-05.jpg';
+      imagem.src = './images/lights drawings2-05-05-05.jpg';
       estado = 'alterada';
     } else {
-      imagem.src = './images/lights drawings2-09-09.jpg';
+      imagem.src = './images/lights drawings2-09-09-09.jpg';
       estado = 'inicial';
     }
 
@@ -20,47 +20,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function updateImage() {
-  let homeImage = document.querySelector('.home-image');
-  if (window.innerWidth <= 768) {
-      homeImage.src = "images/fundositemenor_prancheta.png"; // Imagem menor
-  } else {
-      homeImage.src = "images/fundosite.png"; // Imagem padrão
-  }
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
-
-  function activateLink(event) {
-      // Remove a classe 'nav-link-active' de todos os links
-      navLinks.forEach(link => link.classList.remove("nav-link-active"));
-      
-      // Adiciona a classe 'nav-link-active' ao link clicado
-      event.target.classList.add("nav-link-active");
-  }
+  const currentURL = window.location.pathname.split("/").pop(); // Pega só o nome do arquivo, ex: 'shop-section.html'
 
   navLinks.forEach(link => {
-      link.addEventListener("click", activateLink);
-  });
+    const linkHref = link.getAttribute("href");
 
-  // Opção extra: Destacar link ao rolar até a seção correspondente
-  window.addEventListener("scroll", () => {
-      let currentSection = "";
-
-      document.querySelectorAll("section").forEach(section => {
-          const sectionTop = section.offsetTop - 100;
-          if (window.scrollY >= sectionTop) {
-              currentSection = section.getAttribute("id");
-          }
-      });
-
-      navLinks.forEach(link => {
-          link.classList.remove("nav-link-active");
-          if (link.getAttribute("href") === `#${currentSection}`) {
-              link.classList.add("nav-link-active");
-          }
-      });
+    // Verifica se o link aponta para a mesma página
+    if (
+      linkHref === currentURL ||                     // Exato match
+      (linkHref === "index.html" && currentURL === "") || // Caso especial para index
+      (linkHref !== "#" && currentURL.includes(linkHref)) // Links internos com hash (#)
+    ) {
+      link.classList.add("nav-link-active");
+    } else {
+      link.classList.remove("nav-link-active");
+    }
   });
 });
 

@@ -20,14 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function updateImage() {
-  let homeImage = document.querySelector('.home-image');
-  if (window.innerWidth <= 768) {
-      homeImage.src = "images/fundositemenor_prancheta.png"; // Imagem menor
-  } else {
-      homeImage.src = "images/fundosite.png"; // Imagem padrão
-  }
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
